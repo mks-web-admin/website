@@ -342,33 +342,6 @@ p { margin: 0 0 1em; }
   .adult .ticks { grid-template-columns: 1fr; }
 }
 
-/* Е-училница (лента) --------------------------------------------- */
-
-.eband { --focus: #fff; position: relative; background: var(--navy) url("../img/ucenici-traka.webp") center / cover no-repeat; color: #fff; }
-.eband::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0, 25, 55, 0.2), rgba(0, 25, 55, 0.78) 55%); }
-.eband__inner { position: relative; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 32px 56px; align-items: center; padding-block: clamp(56px, 8vw, 96px); }
-.eband__text { grid-column: 2; }
-.eband h2 { color: #fff; }
-.eband p { color: rgba(255, 255, 255, 0.84); max-width: 46ch; }
-.years { grid-column: 2; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; list-style: none; margin: 8px 0 0; padding: 0; }
-.year-link {
-  display: flex; flex-direction: column; padding: 18px 18px 16px; min-height: 124px; justify-content: space-between;
-  border: 1px solid rgba(255, 255, 255, 0.4); color: #fff; text-decoration: none;
-  background: rgba(0, 25, 55, 0.35); transition: background-color 0.15s, border-color 0.15s;
-}
-.year-link:hover { background: var(--crimson); border-color: var(--crimson); color: #fff; }
-.year-link__num { font-family: var(--font-display); font-weight: 600; font-size: 3rem; line-height: 1; }
-.year-link__label { font-weight: 500; }
-
-@media (max-width: 900px) {
-  .eband__inner { grid-template-columns: 1fr; }
-  .eband__text, .years { grid-column: 1; }
-  .eband::before { background: rgba(0, 25, 55, 0.78); }
-}
-@media (max-width: 520px) {
-  .years { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
-
 /* Документи ------------------------------------------------------ */
 
 .doclist { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
@@ -536,18 +509,6 @@ p { margin: 0 0 1em; }
   .org-services::before { display: none; }
   .org-service::before { left: -24px; top: 26px; width: 24px; height: 2px; }
 }
-
-/* Е-училница (страница) ------------------------------------------ */
-
-.years-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
-.year-panel { padding: clamp(24px, 3vw, 36px); background: var(--mist); border-top: 4px solid var(--navy); }
-.year-panel__head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 16px; }
-.year-panel__num { font-family: var(--font-display); font-weight: 600; font-size: 3.5rem; line-height: 0.9; color: var(--crimson); }
-.year-panel h2 { font-size: 1.75rem; margin: 0; }
-.year-panel__empty { color: var(--muted); margin: 0; }
-.year-panel .doclist { border-top: 0; }
-
-@media (max-width: 760px) { .years-grid { grid-template-columns: 1fr; } }
 
 /* Контакт -------------------------------------------------------- */
 
