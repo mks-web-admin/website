@@ -42,8 +42,7 @@ To use the school domain `marijakirisklodovska.edu.mk`, add a file named `CNAME`
 
 ## Documents: files that still need to be uploaded
 
-The PDFs were stored on the deleted server and are **not** in the export or media backup.
-Put them in `dokumenti/` with exactly these names. Until a file exists, its row shows
+These are still missing. Put them in `dokumenti/` with exactly these names. Until a file exists, its row shows
 “Наскоро достапно” instead of a broken link. Once uploaded, it becomes an “Отвори” link automatically.
 
 | Document | File name |
@@ -52,17 +51,9 @@ Put them in `dokumenti/` with exactly these names. Until a file exists, its row 
 | Годишна програма за работа | `Godishna-programa-za-rabota.pdf` |
 | Годишен извештај за работа | `Godishen-izveshtaj-za-rabota.pdf` |
 | Самоевалуација | `Samoevaluacija.pdf` |
-| Етички кодекс за наставници и стручни соработници | `Eticki-kodeks-na-nastavnici-i-strucni-sorabotnici.pdf` |
-| Кодекс за однесување на учениците | `Kodeks-za-odnesuvanje-na-ucenicite.pdf` |
-| Упатство за постапување во ситуации на насилство | `Upatstvo-za-nasilstvo.pdf` |
-| Правилник за пријавување насилство (МОН) | `Pravilnik-za-prijavuvanje-nasilstvo-sredno-obrazovanie.pdf` |
-| Распоред на дополнителна и додатна настава | `Raspored-za-dopolnitelna-i-dodatna-nastava.pdf` |
-| Статут | `Statut.pdf` |
-| Годишна сметка 787 | `787.pdf` |
-| Годишна сметка 903 | `903.pdf` |
-| Годишна сметка 603 | `603.pdf` |
 
-`dokumenti/uplatnici.jpg` (the payment slips) was recovered from the media backup and is already live.
+The other documents, the annual accounts (`787.pdf`, `903.pdf`, `603.pdf`) and the payment slips
+(`uplatnici.pdf`, with the account details valid from 01.09.2026) are uploaded.
 
 To add a new document, copy an existing `<li class="doc">…</li>` row in `dokumenti.html`
 and change the title and file name. Keep the `data-doc` attribute on PDF links.
