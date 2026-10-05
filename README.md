@@ -41,9 +41,10 @@ To use the school domain `marijakirisklodovska.edu.mk`, add a file named `CNAME`
 
 ## Documents
 
-Only documents that exist are listed. Four from the old site are not on the site yet, because the files
-received were blank: Програма за развој 2024–2028, Годишна програма за работа, Годишен извештај за работа
-and Самоевалуација.
+Four PDFs are intentionally blank placeholders: Програма за развој 2024–2028 (`Programa-za-razvoj-2024-2028.pdf`),
+Годишна програма за работа (`Godishna-programa-za-rabota.pdf`), Годишен извештај за работа
+(`Godishen-izveshtaj-za-rabota.pdf`) and Самоевалуација (`Samoevaluacija.pdf`). To publish the real document,
+replace the file and keep the same name.
 
 To add a document, put the PDF in `dokumenti/` and copy an existing `<li class="doc">…</li>` row in
 `dokumenti.html` (and in `index.html` if it should show on the home page), then change the title and file name.
